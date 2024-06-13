@@ -1,0 +1,21 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.main-footer{
+  @include m.center-by-flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  // background-color: v.$third-color;
+  border-top: 2px solid v.$secondary-color;
+  @media (min-width: v.$tablet) {
+    display: block;
+    // padding-top: 66px;
+  }
+  p {
+    font-size: 12px;
+    @media (min-width: v.$tablet) {
+      font-size: 24px;
+    }
+  }
+}
