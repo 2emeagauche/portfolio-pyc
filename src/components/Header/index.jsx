@@ -4,7 +4,7 @@ import MenuIcon from "../MenuIcon";
 const Header = () => {
   return (
     <div className="main-header">
-      <h1 className="main-title">PORTFOLIO</h1>
+      <h1 className="main-title">Portfolio</h1>
       <nav>
         <MenuIcon />
         {/* <img src={MenuIcon} alt="menu" /> */}

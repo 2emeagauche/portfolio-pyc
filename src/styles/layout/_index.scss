@@ -5,31 +5,34 @@ html {
   scroll-behavior: smooth;
   height: 100%;
   background-color: v.$bg-color-1;
-  }
+}
   
-  body {
-    height: 100%;
-    margin: 0;
-    }
+body {
+  height: 100%;
+  margin: 0;
+}
     
-    #root{
-      min-height: 100%;
-      display: grid;
-      grid-template-rows: 50px 1fr 100px;
-      // gap: 27px;
-      padding-top: 20px;
-      background-color: v.$bg-color-0;
-      box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
-      @media (min-width: v.$tablet) {
-        grid-template-rows: 68px 1fr 100px;
-        max-width: 900px;
-        margin: 0 auto;
-        // padding: 0 50px;
-      }
+#root{
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 50px 1fr 100px;
+  // gap: 27px;
+  padding-top: 20px;
+  background-color: v.$bg-color-0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.25);
+  @media (min-width: v.$tablet) {
+    grid-template-rows: 68px 1fr 100px;
+    max-width: 900px;
+    margin: 0 auto;
+    // padding: 0 50px;
   }
+}
   
-  .container{
-    @media (min-width: v.$tablet) {
-      margin: 0 50px;
-    }
+.container{
+  h2{
+    font-size: 1.5rem;
+  }
+  @media (min-width: v.$tablet) {
+    margin: 0 50px 6rem;
+  }
 }

@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.chapter {
+  &-divider {
+    display: block;
+    margin: 1rem auto;
+  }
+  &-block{
+    padding: 0 2rem;
+    background-color: v.$bg-color-2;
+    border-radius:0.4rem;
+    position: relative;
+    .top-indent, .bottom-indent{
+      @include m.chevron;
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: block;
+      margin: auto;
+      &::before{
+        @include m.chevron-before;
+        border-top-color: #ffffff;
+      }
+    }
+    .top-indent{
+      top: 0;
+    }
+    .bottom-indent{
+      bottom: 0;
+      transform: rotate(180deg);
+    }
+  }
+  &-content{
+    border-left: 4px dashed #ffffff;
+    border-right: 4px dashed #ffffff;
+    padding: 2.5rem 0;
+    h2{
+      text-align: center;
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      &::after{
+        @include m.before-after;
+        width: 4rem;
+        margin: auto;
+        border-top: 1px solid v.$secondary-color;
+        top: auto;
+      }
+    }
+  }
+}

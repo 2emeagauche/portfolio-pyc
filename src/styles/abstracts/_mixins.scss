@@ -40,3 +40,34 @@
   border-radius: $radius;
   box-shadow: $sdwX $sdwY $sdwBlur 0px rgba(0, 0, 0, $sdwAlpha);
 }
+
+@mixin chevron{
+  position: relative;
+  width: 20px;
+  height: 10px;
+  flex: 0 0 auto;
+}
+
+@mixin chevron-before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: v.$deco-color;
+}
+
+@mixin chevron-after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: #ffffff;
+}
