@@ -1,7 +1,38 @@
 import Banner from "../../components/Banner"
 import Chapter from '../../components/Chapter'
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import IconReact from '../../components/Icons/IconReact'
+import IconRouter from '../../components/Icons/IconRouter'
+import IconRedux from '../../components/Icons/IconRedux'
+import IconJest from '../../components/Icons/IconJest'
+import IconApi from '../../components/Icons/IconApi'
+import IconAgile from '../../components/Icons/IconAgile'
+import IconAlgo from '../../components/Icons/IconAlgo'
+import IconCss3 from '../../components/Icons/IconCss3'
+import IconGit from '../../components/Icons/IconGit'
+import IconHtml5 from '../../components/Icons/IconHtml5'
+import IconJs from '../../components/Icons/IconJs'
+import IconAnimate from '../../components/Icons/IconAnimate'
+import IconIllustrator from '../../components/Icons/IconIllustrator'
+import IconInkscape from '../../components/Icons/IconInkscape'
+import IconPhotoshop from '../../components/Icons/IconPhotoshop'
+import IconEmail from '../../components/Icons/IconEmail'
+import IconJira from '../../components/Icons/IconJira'
 
 const Accueil = () => {
+  const IconListItem = ({children, icon}) => {
+    return (
+      <ListItem>
+        <ListItemIcon>
+          {icon}
+        </ListItemIcon>
+        <ListItemText>{children}</ListItemText>
+      </ListItem>
+    )
+  }
   
   return (
     <div className="container">
@@ -26,37 +57,36 @@ const Accueil = () => {
         <h2 className='main-title'>Mes compétences</h2>
         <div className="tabs">
           <div className="tab">
-            <h3>Nouvelles compétences</h3>
-            <ul>
-              <li>REACT</li>
-              <li>REACT Router</li>
-              <li>REACT REDUX</li>
-              <li>Tests unitaires</li>
-              <li>Tests fonctionnels</li>
-              <li>API REST</li>
-            </ul>
+            <h3 className='main-title'>Nouvelles compétences</h3>
+            <List>
+              <IconListItem icon={<IconReact />}>REACT</IconListItem>
+              <IconListItem icon={<IconRouter />}>REACT Router</IconListItem>
+              <IconListItem icon={<IconRedux />}>REACT Redux</IconListItem>
+              <IconListItem icon={<IconJest />}>Tests unitaires et fonctionnels avec Jest</IconListItem>
+              <IconListItem icon={<IconApi />}>API Rest</IconListItem>
+            </List>
           </div>
           <div className="tab">
-            <h3>Perfectionnement</h3>
-            <ul>
-              <li>HTML 5 (Grid et Flex)</li>
-              <li>CSS 3 (SASS)</li>
-              <li>JS (modules, strict mode)</li>
-              <li>Méthode Agile</li>
-              <li>GIT</li>
-              <li>Algorithmie</li>
-            </ul>
+            <h3 className='main-title'>Perfectionnement</h3>
+            <List>
+              <IconListItem icon={<IconHtml5 />}>HTML 5 (Grid et Flex)</IconListItem>
+              <IconListItem icon={<IconCss3 />}>CSS 3 (SASS)</IconListItem>
+              <IconListItem icon={<IconJs />}>JS (modules, strict mode)</IconListItem>
+              <IconListItem icon={<IconAgile />}>Méthode Agile</IconListItem>
+              <IconListItem icon={<IconGit />}>GIT</IconListItem>
+              <IconListItem icon={<IconAlgo />}>Algorithmie</IconListItem>
+            </List>
           </div>
           <div className="tab">
-            <h3>Compétences annexes</h3>
-            <ul>
-              <li>Adobe Photoshop</li>
-              <li>Adobe Animate</li>
-              <li>Adobe Illustrator</li>
-              <li>Inkscape</li>
-              <li>Montage d’emails responsive</li>
-              <li>Ticketing JIRA</li>
-            </ul>
+            <h3 className='main-title'>Compétences annexes</h3>
+            <List>
+              <IconListItem icon={<IconPhotoshop />}>Adobe Photoshop</IconListItem>
+              <IconListItem icon={<IconAnimate />}>Adobe Animate</IconListItem>
+              <IconListItem icon={<IconIllustrator />}>Adobe Illustrator</IconListItem>
+              <IconListItem icon={<IconInkscape />}>Inkscape</IconListItem>
+              <IconListItem icon={<IconEmail />}>Montage d’emails responsive</IconListItem>
+              <IconListItem icon={<IconJira />}>Ticketing JIRA</IconListItem>
+            </List>
           </div>
         </div>
       </Chapter>

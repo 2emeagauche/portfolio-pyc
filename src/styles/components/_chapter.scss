@@ -48,5 +48,19 @@
         top: auto;
       }
     }
+    h3{
+      position: relative;
+      padding-bottom: 0.5rem;
+      margin: 2rem 0 1rem;
+      &::after{
+        @include m.before-after;
+        width: 4rem;
+        border-top: 1px solid v.$secondary-color;
+        top: auto;
+      }
+    }
+    .tabs{
+      padding: 0 4rem;
+    }
   }
 }
