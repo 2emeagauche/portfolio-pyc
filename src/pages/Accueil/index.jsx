@@ -1,9 +1,11 @@
+import { useState } from "react"
 import Banner from "../../components/Banner"
 import Chapter from '../../components/Chapter'
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import ListItemText from '@mui/material/ListItemText'
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import IconReact from '../../components/Icons/IconReact'
 import IconRouter from '../../components/Icons/IconRouter'
 import IconRedux from '../../components/Icons/IconRedux'
@@ -22,18 +24,53 @@ import IconPhotoshop from '../../components/Icons/IconPhotoshop'
 import IconEmail from '../../components/Icons/IconEmail'
 import IconJira from '../../components/Icons/IconJira'
 
+const theme = createTheme({
+  components: {
+    MuiListItem:{
+      styleOverrides: {
+        root: {
+          padding: '0.4rem 0',
+        }
+      }
+    },
+    MuiListItemIcon: {
+      styleOverrides: {
+        root: {
+          minWidth: '3rem',
+        },
+      },
+    },
+    MuiListItemText: {
+      styleOverrides: {
+        root: {
+          margin: 'auto',
+        },
+      },
+    },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          lineHeight: 'normal',
+        },
+      },
+    },
+  },
+});
+
+
+const IconListItem = ({children, icon}) => {
+  return (
+    <ListItem>
+      <ListItemIcon>
+        {icon}
+      </ListItemIcon>
+      <ListItemText>{children}</ListItemText>
+    </ListItem>
+  )
+}
+
 const Accueil = () => {
-  const IconListItem = ({children, icon}) => {
-    return (
-      <ListItem>
-        <ListItemIcon>
-          {icon}
-        </ListItemIcon>
-        <ListItemText>{children}</ListItemText>
-      </ListItem>
-    )
-  }
-  
+
   return (
     <div className="container">
       <Banner />
@@ -55,40 +92,42 @@ const Accueil = () => {
       </section>
       <Chapter id='competences'>
         <h2 className='main-title'>Mes compétences</h2>
-        <div className="tabs">
-          <div className="tab">
-            <h3 className='main-title'>Nouvelles compétences</h3>
-            <List>
-              <IconListItem icon={<IconReact />}>REACT</IconListItem>
-              <IconListItem icon={<IconRouter />}>REACT Router</IconListItem>
-              <IconListItem icon={<IconRedux />}>REACT Redux</IconListItem>
-              <IconListItem icon={<IconJest />}>Tests unitaires et fonctionnels avec Jest</IconListItem>
-              <IconListItem icon={<IconApi />}>API Rest</IconListItem>
-            </List>
+        <ThemeProvider theme={theme}>
+          <div className="tabs">
+            <div className="tab">
+              <h3 className='main-title'>Nouvelles compétences</h3>
+              <List className="two-cols">
+                <IconListItem icon={<IconReact />}>REACT</IconListItem>
+                <IconListItem icon={<IconRouter />}>REACT Router</IconListItem>
+                <IconListItem icon={<IconRedux />}>REACT Redux</IconListItem>
+                <IconListItem icon={<IconJest />}>Tests unitaires et fonctionnels avec Jest</IconListItem>
+                <IconListItem icon={<IconApi />}>API Rest</IconListItem>
+              </List>
+            </div>
+            <div className="tab">
+              <h3 className='main-title'>Perfectionnement</h3>
+              <List className="two-cols">
+                <IconListItem icon={<IconHtml5 />}>HTML 5 (Grid et Flex)</IconListItem>
+                <IconListItem icon={<IconCss3 />}>CSS 3 (SASS)</IconListItem>
+                <IconListItem icon={<IconJs />}>JS (modules, strict mode)</IconListItem>
+                <IconListItem icon={<IconAgile />}>Méthode Agile</IconListItem>
+                <IconListItem icon={<IconGit />}>GIT</IconListItem>
+                <IconListItem icon={<IconAlgo />}>Algorithmie</IconListItem>
+              </List>
+            </div>
+            <div className="tab">
+              <h3 className='main-title'>Compétences annexes</h3>
+              <List className="two-cols">
+                <IconListItem icon={<IconPhotoshop />}>Adobe Photoshop</IconListItem>
+                <IconListItem icon={<IconAnimate />}>Adobe Animate</IconListItem>
+                <IconListItem icon={<IconIllustrator />}>Adobe Illustrator</IconListItem>
+                <IconListItem icon={<IconInkscape />}>Inkscape</IconListItem>
+                <IconListItem icon={<IconEmail />}>Montage d’emails responsive</IconListItem>
+                <IconListItem icon={<IconJira />}>Ticketing JIRA</IconListItem>
+              </List>
+            </div>
           </div>
-          <div className="tab">
-            <h3 className='main-title'>Perfectionnement</h3>
-            <List>
-              <IconListItem icon={<IconHtml5 />}>HTML 5 (Grid et Flex)</IconListItem>
-              <IconListItem icon={<IconCss3 />}>CSS 3 (SASS)</IconListItem>
-              <IconListItem icon={<IconJs />}>JS (modules, strict mode)</IconListItem>
-              <IconListItem icon={<IconAgile />}>Méthode Agile</IconListItem>
-              <IconListItem icon={<IconGit />}>GIT</IconListItem>
-              <IconListItem icon={<IconAlgo />}>Algorithmie</IconListItem>
-            </List>
-          </div>
-          <div className="tab">
-            <h3 className='main-title'>Compétences annexes</h3>
-            <List>
-              <IconListItem icon={<IconPhotoshop />}>Adobe Photoshop</IconListItem>
-              <IconListItem icon={<IconAnimate />}>Adobe Animate</IconListItem>
-              <IconListItem icon={<IconIllustrator />}>Adobe Illustrator</IconListItem>
-              <IconListItem icon={<IconInkscape />}>Inkscape</IconListItem>
-              <IconListItem icon={<IconEmail />}>Montage d’emails responsive</IconListItem>
-              <IconListItem icon={<IconJira />}>Ticketing JIRA</IconListItem>
-            </List>
-          </div>
-        </div>
+        </ThemeProvider>
       </Chapter>
       <Chapter id='realisations'>
         <h2 className='main-title'>Mes réalisations</h2>
