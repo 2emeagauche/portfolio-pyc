@@ -133,7 +133,7 @@ const Accueil = () => {
       </Chapter>
       <Chapter id='realisations'>
         <h2 className='main-title'>Mes réalisations</h2>
-        <h3 className="main-title">Les projets de la formation OpenClassRooms</h3>
+        <h3 className="main-title" id='ocr'>Les projets de la formation OpenClassRooms</h3>
         <Projet
           projetTitle='ArgentBank'
           projetResume='Projet REACT et REACT REDUX dans une stack MERN.'
