@@ -7,10 +7,15 @@
     margin: 2rem auto;
   }
   &-block{
-    padding: 0 2rem;
+    margin: auto 1rem;
+    padding: 0 0.8rem;
     background-color: v.$bg-color-2;
     border-radius:0.4rem;
     position: relative;
+    @media (min-width: v.$mobile) {
+      margin: auto;
+      padding: 0 2rem;
+    }
     .top-indent, .bottom-indent{
       @include m.chevron;
       position: absolute;
@@ -32,14 +37,21 @@
     }
   }
   &-content{
-    border-left: 4px dashed #ffffff;
-    border-right: 4px dashed #ffffff;
+    border-left: 2px dashed #ffffff;
+    border-right: 2px dashed #ffffff;
     padding: 2.5rem 0;
+    @media (min-width: v.$mobile) {
+      border-left: 4px dashed #ffffff;
+      border-right: 4px dashed #ffffff;
+    }
     h2{
       text-align: center;
       position: relative;
       padding-bottom: 0.5rem;
-      margin-bottom: 4rem;
+      margin-bottom: 3rem;
+      @media (min-width: v.$tablet) {
+        margin-bottom: 4rem;
+      }
       &::after{
         @include m.before-after;
         width: 4rem;
@@ -51,7 +63,13 @@
     h3{
       position: relative;
       padding-bottom: 0.5rem;
-      margin: 0 0 1.5rem 6rem;
+      margin: 0 0 1.5rem 3rem;
+      @media (min-width: v.$mobile) {
+        margin: 0 2rem 1.5rem;
+      }
+      @media (min-width: v.$tablet) {
+        margin: 0 0 1.5rem 6rem;
+      }
       &::after{
         @include m.before-after;
         width: 4rem;
@@ -59,19 +77,22 @@
         top: auto;
       }
     }
-    // .tabs{
-    //   padding: 0 2rem;
-    // }
     .card{
-      margin: 0 2rem 3rem;
+      margin: 0 1.3rem 2.7rem;
       background-color: rgba(255,255,255,0.9);
       border-radius: 0.5rem;
-      padding: 1rem 4rem;
+      padding: 1rem 1.5rem;
+      @media (min-width: v.$tablet) {
+        padding: 1rem 4rem;
+        margin: 0 2rem 3rem;
+      }
       &>ul{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 2rem;
-        grid-row-gap: 0.5rem;
+        @media (min-width: v.$tablet) {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-column-gap: 2rem;
+          grid-row-gap: 0.5rem;
+        }
       }
       &:last-child{
         margin-bottom: 0;
@@ -81,20 +102,30 @@
       display: grid;
       padding: 0;
       margin-bottom: 2rem;
-      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto 1fr;
       grid-column-gap: 2rem;
-      grid-auto-flow: column;
+      grid-auto-flow: row;
       overflow: hidden;
       line-height: 1.5;
+      @media (min-width: v.$tablet) {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: column;
+      }
       &-texts {
-        padding: 2rem 0 2rem 2rem;
+        padding: 1rem;
         align-self: center;
         text-align: center;
+        @media (min-width: v.$tablet) {
+          padding: 2rem 0 2rem 2rem;
+        }
       }
       &:nth-child(even){
         .projet-texts{
-          padding: 2rem 2rem 2rem 0;
-          grid-column: 2;
+          @media (min-width: v.$tablet) {
+            padding: 2rem 2rem 2rem 0;
+            grid-column: 2;
+          }
         }
       }
       &-visuel{

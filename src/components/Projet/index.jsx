@@ -1,9 +1,9 @@
 import { useState } from "react"
 import SimpleDialog from "../../components/SimpleDialog"
 import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
 import GithubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
+import MoreHorizontalIcon from '@mui/icons-material/MoreHoriz';
 
 const Projet = (props) => {
   const {projetTitle, projetResume, projetGithubHref, projetDemoHref, projetVisuel, children} = {...props}
@@ -24,10 +24,11 @@ const Projet = (props) => {
       children && <>
         <IconButton
           sx={{ color: 'rgba(0, 0, 0, 0.54)' }}
-          aria-label={`info about ${projetTitle}`}
+          aria-label={`En savoir plus sur ${projetTitle}`}
+          title={`En savoir plus sur ${projetTitle}`}
           onClick={handleClickOpen}
         >
-          <InfoIcon />
+          <MoreHorizontalIcon sx={{color:'#1D3557'}} />
         </IconButton>
         <SimpleDialog
           open={open}
@@ -44,24 +45,26 @@ const Projet = (props) => {
     <div className="card projet">
       <div className="projet-texts">
         <h4 className="main-title">{projetTitle}</h4>
-        <p>{projetResume}</p>
+        <p>{projetResume}<MoreInfo /></p>
         <p>
-          <MoreInfo />
+          
           <IconButton
             sx={{ color: 'rgba(0, 0, 0, 0.54)' }}
             aria-label={`ouvrir le repo GitHub`}
+            title={`ouvrir le repo GitHub`}
             href={projetGithubHref}
             target='_blank'
             >
-            <GithubIcon />
+            <GithubIcon sx={{color:'#1D3557'}} />
           </IconButton>
           {projetDemoHref && <IconButton
             sx={{ color: 'rgba(0, 0, 0, 0.54)' }}
             aria-label={`ouvrir la demo`}
+            title={`ouvrir la demo`}
             href={projetDemoHref}
             target='_blank'
           >
-            <LaunchIcon />
+            <LaunchIcon sx={{color:'#1D3557'}} />
           </IconButton>}
         </p>
       </div>

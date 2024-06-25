@@ -136,7 +136,7 @@ const Accueil = () => {
         <h3 className="main-title" id='ocr'>Les projets de la formation OpenClassRooms</h3>
         <Projet
           projetTitle='ArgentBank'
-          projetResume='Projet REACT et REACT REDUX dans une stack MERN.'
+          projetResume='Projet REACT et REACT REDUX dans une stack MERN'
           projetGithubHref='https://github.com/2emeagauche/OCR_ArgentBank_ReactRedux_P11/tree/main/argent-bank'
           projetDemoHref=''
           projetVisuel={assetArgentbank}
@@ -150,7 +150,7 @@ const Accueil = () => {
         </Projet>
         <Projet
           projetTitle='KASA'
-          projetResume='Projet en REACT et données json.'
+          projetResume='Projet en REACT et données json'
           projetGithubHref='https://github.com/2emeagauche/OCR_KASA_P8'
           projetDemoHref='https://2emeagauche.github.io/OCR_KASA_P8'
           projetVisuel={assetKasa}
@@ -162,7 +162,7 @@ const Accueil = () => {
         </Projet>
         <Projet
           projetTitle='724 Events'
-          projetResume='Il s’agit de débugger un site en concevant et en utilisant les tests unitaires et fonctionnels avec JEST.'
+          projetResume='Il s’agit de débugger un site en concevant et en utilisant les tests unitaires et fonctionnels avec JEST'
           projetGithubHref='https://github.com/2emeagauche/OCR_Debuggez-une-application-React.JS_P10'
           projetDemoHref=''
           projetVisuel={asset724Events}
@@ -170,7 +170,7 @@ const Accueil = () => {
         </Projet>
         <Projet
           projetTitle='Nina Carducci'
-          projetResume='Optimisation SEO.'
+          projetResume='Optimisation SEO'
           projetGithubHref='https://github.com/2emeagauche/OCR_ArgentBank_ReactRedux_P11/tree/main/argent-bank'
           projetDemoHref=''
           projetVisuel={assetNinaCarducci}

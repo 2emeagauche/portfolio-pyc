@@ -18,8 +18,8 @@ const Header = () => {
         <h1 className="main-title">Portfolio</h1>
         
         <nav>
-          <Button onClick={toggleDrawer(true)}><MenuIcon /></Button>
-          <Drawer open={open} onClose={toggleDrawer(false)} anchor='right'>
+          <Button sx={{all:'initial'}} onClick={toggleDrawer(true)}><MenuIcon /></Button>
+          <Drawer open={open} onClose={toggleDrawer(false)} anchor='right' container={() => document.querySelector('#root')}>
             <MainMenu handleClose={toggleDrawer} />
           </Drawer>
           

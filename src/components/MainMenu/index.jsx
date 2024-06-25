@@ -7,7 +7,7 @@ import Link from '@mui/material/Link'
 
 const MainMenu = ({handleClose}) => {
   return (
-    <Box sx={{ width: 250 }} role="presentation" onClick={handleClose(false)}>
+    <Box sx={{ width: 360 }} role="presentation" onClick={handleClose(false)}>
       <List>
         <ListItem disablePadding>
           <ListItemButton>

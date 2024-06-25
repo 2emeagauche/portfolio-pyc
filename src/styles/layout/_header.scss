@@ -8,28 +8,34 @@
   border-bottom: 2px solid v.$deco-color;
   width: 100%;
   height: 100%;
-  padding: 0 50px;
-
+  padding: 0.2rem 1.3rem 0;
+  @media (min-width: v.$mobile) {
+    padding: 0 50px;
+  }
+  
   h1 {
     font-size: 2rem;
-    padding-left: 1rem;
+    @media (min-width: v.$mobile) {
+      padding-left: 1rem;
+    }
   }
 
   nav{
-    display: flex;
-    gap: 26px;
-    font-size: 12px;
-    .active{
-      text-decoration: underline;
-    }
-    @media (min-width: v.$tablet) {
-      font-size: 24px;
-      gap: 57px;
-    }
+    // display: flex;
+    // gap: 26px;
+    // font-size: 12px;
+    // .active{
+    //   text-decoration: underline;
+    // }
+    // @media (min-width: v.$tablet) {
+    //   font-size: 24px;
+    //   gap: 57px;
+    // }
     .menu-icon{
       width: 30px;
       height: 30px;
       fill: v.$secondary-color;
+      display: block;
     }
   }
   
