@@ -1,30 +1,29 @@
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
-import Link from '@mui/material/Link'
+import { Button } from "@mui/material"
+import MenuIcon from "../MenuIcon"
 
 const MainMenu = ({handleClose}) => {
   return (
-    <Box sx={{ width: 360 }} role="presentation" onClick={handleClose(false)}>
-      <List>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemText>
-              <Link href='#competences'>Mes Compétences</Link>
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemText>
-              <Link href='#realisations'>Mes Réalisations</Link>
-            </ListItemText>
-          </ListItemButton>
-        </ListItem>
-      </List>
-    </Box>
+    <>
+    {
+      handleClose?
+      <button className="close-button" onClick={handleClose(false)}><MenuIcon /></button>
+      :
+      <></>
+    }
+    <div className="main-menu">
+      <ul onClick={handleClose?handleClose(false):null}>
+        <li>
+          <a href='#presentation'>Présentation</a>
+        </li>
+        <li>
+          <a href='#competences'>Mes Compétences</a>
+        </li>
+        <li>
+          <a href='#realisations'>Mes Réalisations</a>
+        </li>
+      </ul>
+    </div>
+    </>
   )
 }
 

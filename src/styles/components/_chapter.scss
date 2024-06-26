@@ -2,6 +2,7 @@
 @use '../abstracts/mixins' as m;
 
 .chapter {
+  scroll-margin-top:20px;
   &-divider {
     display: block;
     margin: 2rem auto;

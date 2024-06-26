@@ -1,13 +1,61 @@
 @use '../abstracts/variables' as v;
 @use '../abstracts/mixins' as m;
 
+header{
+  border-bottom: 2px solid v.$deco-color;
+  justify-content: center;
+}
+
+.close-button{
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  .menu-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: v.$secondary-color;
+    display: block;
+    transform: scaleX(-1);
+  }
+}
+
+.main-menu{
+  padding: 2rem 2rem 0 4.5rem;
+  text-align: right;
+  @media (min-width: v.$tablet) {
+    padding: 0;
+    text-align: left;
+  }
+  ul{
+    & > li{
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: v.$secondary-color;
+      @media (min-width: v.$tablet) {
+        display: block;
+        margin-bottom: auto;
+      }
+      &::before{
+        @include m.before-after;
+        position: static;
+        width: 100%;
+        border-top: 1px solid v.$secondary-color;
+      }
+      & > a {
+        flex-shrink: 0;
+      }
+    }
+  }
+}
+
 .main-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid v.$deco-color;
+  align-items: first baseline;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   padding: 0.2rem 1.3rem 0;
   @media (min-width: v.$mobile) {
     padding: 0 50px;
@@ -15,28 +63,43 @@
   
   h1 {
     font-size: 2rem;
-    @media (min-width: v.$mobile) {
-      padding-left: 1rem;
-    }
   }
 
   nav{
-    // display: flex;
-    // gap: 26px;
-    // font-size: 12px;
-    // .active{
-    //   text-decoration: underline;
-    // }
-    // @media (min-width: v.$tablet) {
-    //   font-size: 24px;
-    //   gap: 57px;
-    // }
     .menu-icon{
       width: 30px;
       height: 30px;
       fill: v.$secondary-color;
       display: block;
     }
+    .main-menu{
+      ul{
+        font-family: 'Roboto Condensed', serif;
+        display: flex;
+        gap: 1rem;
+        color: v.$secondary-color
+      }
+      a{
+        display: block;
+        position: relative;
+        padding-top: 0.6rem;
+        &::after{
+          @include m.before-after;
+          width: 0%;
+          margin: auto;
+          border-top: 1px solid v.$secondary-color;
+          bottom: auto;
+          transition: width 0.3s ease 0s;
+        }
+        &:hover::after{
+          width: 100%;
+        }
+      }
+    }
   }
   
+}
+
+.MuiDrawer-paper{
+  width: 90%;
 }

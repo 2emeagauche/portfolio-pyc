@@ -4,6 +4,7 @@
 .presentation-block{
   text-align: center;
   margin-bottom: 4rem;
+  scroll-margin-top: 100px;
 
   .main-title{
     @include m.center-by-flex;
@@ -22,6 +23,7 @@
     font-weight: 700;
   }
 }
+
 .presentation-text{
   margin: 1rem 2rem;
   text-align: justify;
