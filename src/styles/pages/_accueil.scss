@@ -4,7 +4,10 @@
 .presentation-block{
   text-align: center;
   margin-bottom: 4rem;
-  scroll-margin-top: 100px;
+  scroll-margin-top: 70px;
+  @media (min-width: v.$tablet) {
+    scroll-margin-top: 100px;
+  }
 
   .main-title{
     @include m.center-by-flex;
