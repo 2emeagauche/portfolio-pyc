@@ -12,23 +12,24 @@ import ListItem from '@mui/material/ListItem'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import CardMotion from "../../components/CardMotion"
-import IconReact from '../../components/Icons/IconReact'
-import IconRouter from '../../components/Icons/IconRouter'
-import IconRedux from '../../components/Icons/IconRedux'
-import IconJest from '../../components/Icons/IconJest'
-import IconApi from '../../components/Icons/IconApi'
-import IconAgile from '../../components/Icons/IconAgile'
-import IconAlgo from '../../components/Icons/IconAlgo'
-import IconCss3 from '../../components/Icons/IconCss3'
-import IconGit from '../../components/Icons/IconGit'
-import IconHtml5 from '../../components/Icons/IconHtml5'
-import IconJs from '../../components/Icons/IconJs'
-import IconAnimate from '../../components/Icons/IconAnimate'
-import IconIllustrator from '../../components/Icons/IconIllustrator'
-import IconInkscape from '../../components/Icons/IconInkscape'
-import IconPhotoshop from '../../components/Icons/IconPhotoshop'
-import IconEmail from '../../components/Icons/IconEmail'
-import IconJira from '../../components/Icons/IconJira'
+import divider from '../../assets/chapter-divider.svg'
+import IconReact from '../../assets/Icons/IconReact'
+import IconRouter from '../../assets/Icons/IconRouter'
+import IconRedux from '../../assets/Icons/IconRedux'
+import IconJest from '../../assets/Icons/IconJest'
+import IconApi from '../../assets/Icons/IconApi'
+import IconAgile from '../../assets/Icons/IconAgile'
+import IconAlgo from '../../assets/Icons/IconAlgo'
+import IconCss3 from '../../assets/Icons/IconCss3'
+import IconGit from '../../assets/Icons/IconGit'
+import IconHtml5 from '../../assets/Icons/IconHtml5'
+import IconJs from '../../assets/Icons/IconJs'
+import IconAnimate from '../../assets/Icons/IconAnimate'
+import IconIllustrator from '../../assets/Icons/IconIllustrator'
+import IconInkscape from '../../assets/Icons/IconInkscape'
+import IconPhotoshop from '../../assets/Icons/IconPhotoshop'
+import IconEmail from '../../assets/Icons/IconEmail'
+import IconJira from '../../assets/Icons/IconJira'
 
 const theme = createTheme({
   components: {
@@ -95,6 +96,7 @@ const Accueil = () => {
           <p>Entre 2023 et 2024, afin de <strong>valider et perfectionner</strong> mes acquis je suis la formation certifiante (BAC+2) <strong>Intégrateur Web d’OpenClassRooms</strong> d’une durée de 9 mois. Celle-ci est principalement axée sur REACT.</p>
         </div>
       </section>
+      <img className='chapter-divider' src={divider} alt="" aria-hidden='true' />
       <ChapterSection classValue='chapter' id='competences'>
         <h2 className='main-title'>Mes compétences</h2>
         <ThemeProvider theme={theme}>
@@ -138,6 +140,7 @@ const Accueil = () => {
           </CardMotion>
         </ThemeProvider>
       </ChapterSection>
+      <img className='chapter-divider' src={divider} alt="" aria-hidden='true' />
       <ChapterSection classValue='chapter' id='realisations'>
         <h2 className='main-title'>Mes réalisations</h2>
         <h3 className="main-title" id='ocr'>Les projets de la formation OpenClassRooms</h3>
