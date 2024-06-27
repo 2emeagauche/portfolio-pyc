@@ -1,8 +1,9 @@
 import divider from '../../assets/chapter-divider.svg'
 
-const Chapter = ({children, id}) => {
+const ChapterSection = ({classValue, id, children}) => {
+
   return (
-    <section className='chapter' id={id}>
+    <section className={classValue} id={id}>
       <img className='chapter-divider' src={divider} alt="" aria-hidden='true' />
       <div className="chapter-block">
         <span className="top-indent" aria-hidden="true"></span>
@@ -15,4 +16,4 @@ const Chapter = ({children, id}) => {
   )
 }
 
-export default Chapter
+export default ChapterSection
