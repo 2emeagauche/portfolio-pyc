@@ -1,7 +1,25 @@
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from "framer-motion";
+
 const ChapterSection = ({classValue, id, children}) => {
+  let offset1 = id === 'competences' ? ['0.1 0', '0.5 0'] : ['0 1', '0.3 1']
+  let transformParams = id === 'competences' ? [40, 0] : [-40, 0]
+  const ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: offset1
+  })
+  const translateProgress = useTransform(scrollYProgress, [0, 1], transformParams)
 
   return (
-    <section className={classValue} id={id}>
+    <motion.section
+      className={classValue}
+      id={id}
+      ref={ref}
+      style={{
+        translateY: translateProgress
+      }}
+    >
       <div className="chapter-block">
         <span className="top-indent" aria-hidden="true"></span>
         <div className="chapter-content">
@@ -9,7 +27,7 @@ const ChapterSection = ({classValue, id, children}) => {
         </div>
         <span className="bottom-indent" aria-hidden="true"></span>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

@@ -61,3 +61,12 @@
     }
   }
 }
+.chapter-divider {
+  margin: 2rem auto;
+  position: relative;
+  z-index: 1;
+  img{
+    margin: auto;
+    display: block;
+  }
+}

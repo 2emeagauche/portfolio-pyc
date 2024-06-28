@@ -31,8 +31,10 @@
     }
   }
   .portrait-image{
-    width: 100%;
+    position: relative;
+    overflow: hidden;
     display: block;
+    width: 100%;
     border-bottom-left-radius: 35px;
     @media (min-width: v.$mobile) {
       border-bottom-left-radius: 30px;
@@ -40,6 +42,31 @@
     @media (min-width: v.$tablet) {
       border-bottom-left-radius: 30px;
       width: 246px;
+    }
+    img{
+      display: block;
+    }
+    .revealed{
+      position: absolute;
+      bottom: 0;
+    }
+    .face{
+      position: absolute;
+      bottom: 0;
+      left: 8.4%;
+    }
+    .rocher-rouge{
+      position: absolute;
+      top: 45.8%;
+      left: 0px;
+      width: 80.5%;
+      fill: v.$deco-color;
+    }
+    .rocher-bleu{
+      position: absolute;
+      top: 41.2%;
+      right: 0;
+      width: 84.4%;
     }
   }
   .portrait-line{

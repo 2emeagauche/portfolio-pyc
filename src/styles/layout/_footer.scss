@@ -2,20 +2,33 @@
 @use '../abstracts/mixins' as m;
 
 .main-footer{
-  @include m.center-by-flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: center;
-  // background-color: v.$third-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-top: 2px solid v.$secondary-color;
-  @media (min-width: v.$tablet) {
-    display: block;
-    // padding-top: 66px;
+  padding: 1rem;
+  > p {
+    text-align: right;
   }
-  p {
-    font-size: 12px;
-    @media (min-width: v.$tablet) {
-      font-size: 24px;
-    }
+  > * {
+    flex: 1 0 auto;
+  }
+  @media (min-width: v.$mobile) {
+    padding: 1rem 50px;
+  }
+}
+.social-list{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin: auto;
+  @media (min-width: v.$mobile) {
+    gap: 1rem;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
