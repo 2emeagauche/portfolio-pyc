@@ -18,9 +18,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: Install Dependencies
@@ -33,7 +33,7 @@ jobs:
           name: 'ghp-prtfolio-pyc'
           path: build
       - name: Deploy to GH Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           artifact_name: 'ghp-prtfolio-pyc'
