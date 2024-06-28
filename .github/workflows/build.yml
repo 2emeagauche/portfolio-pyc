@@ -28,12 +28,12 @@ jobs:
       - name: Build Project
         run: npm run build
       - name: Upload Build Output/Artifacts
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: 'ghp-prtfolio-pyc'
+          name: 'ghp-portfolio-pyc'
           path: build
       - name: Deploy to GH Pages
         uses: actions/deploy-pages@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          artifact_name: 'ghp-prtfolio-pyc'
+          artifact_name: 'ghp-portfolio-pyc'
