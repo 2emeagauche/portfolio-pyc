@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.6e0a5677.css",
+    "main.js": "/portfolio/static/js/main.e325ba81.js",
+    "static/media/nina-carducci.png": "/portfolio/static/media/nina-carducci.69ff332d4b78a833ab84.png",
+    "static/media/724events.png": "/portfolio/static/media/724events.cb4c07c7d716e4a96ef1.png",
+    "static/media/argentbank.png": "/portfolio/static/media/argentbank.b4ad9385f77e7b92f697.png",
+    "static/media/kasa.png": "/portfolio/static/media/kasa.590d9e193063d39135a2.png",
+    "static/media/portrait.jpg": "/portfolio/static/media/portrait.f44ec8dc2730d88b6790.jpg",
+    "static/media/face.svg": "/portfolio/static/media/face.8003d983ab4f27c929e4cb915cfb5941.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/rocher-rouge.svg": "/portfolio/static/media/rocher-rouge.a8af328d7a6a4675637190b3216ff6de.svg",
+    "static/media/rocher-bleu.svg": "/portfolio/static/media/rocher-bleu.0bdaa0a12250320c2703b60da968d3ed.svg",
+    "static/media/chapter-divider.svg": "/portfolio/static/media/chapter-divider.7589524d53ce9269bf8a98421dd3eed6.svg",
+    "main.6e0a5677.css.map": "/portfolio/static/css/main.6e0a5677.css.map",
+    "main.e325ba81.js.map": "/portfolio/static/js/main.e325ba81.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e0a5677.css",
+    "static/js/main.e325ba81.js"
+  ]
+}
