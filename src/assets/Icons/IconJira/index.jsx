@@ -17,11 +17,11 @@ const IconJira = () => {
      id="a">
     <stop
        offset=".18"
-       stop-color="#0052cc"
+       stopColor="#0052cc"
        id="stop2" />
     <stop
        offset="1"
-       stop-color="#2684ff"
+       stopColor="#2684ff"
        id="stop4" />
   </linearGradient>
   <linearGradient
@@ -46,8 +46,8 @@ const IconJira = () => {
        fill="#2684ff"
        id="path9" />
     <g
-       clip-rule="evenodd"
-       fill-rule="evenodd"
+       clipRule="evenodd"
+       fillRule="evenodd"
        id="g15">
       <path
          d="M 15.9999,11.8606 C 13.1979,9.15007 13.1842,4.75994 15.9694,2.0332 l -9.36588,9.0549 5.09748,4.9303 z"

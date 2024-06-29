@@ -23,7 +23,7 @@ const IconReact = () => {
             id="circle2" />
           <g
             stroke="#149eca"
-            stroke-width="1"
+            strokeWidth="1"
             fill="none"
             id="g10">
             <ellipse
