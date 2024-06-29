@@ -7,7 +7,6 @@ import MoreHorizontalIcon from '@mui/icons-material/MoreHoriz';
 
 const Projet = (props) => {
   const {projetTitle, projetResume, projetGithubHref, projetDemoHref, projetVisuel, children} = {...props}
-  console.log(children)
 
   const [open, setOpen] = useState(false);
 

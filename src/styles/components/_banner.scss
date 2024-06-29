@@ -53,20 +53,23 @@
     .face{
       position: absolute;
       bottom: 0;
+      top: 0;
       left: 8.4%;
+      will-change: opacity;
     }
     .rocher-rouge{
       position: absolute;
       top: 45.8%;
       left: 0px;
       width: 80.5%;
-      fill: v.$deco-color;
+      will-change: scale translate;
     }
     .rocher-bleu{
       position: absolute;
       top: 41.2%;
       right: 0;
       width: 84.4%;
+      will-change: translate;
     }
   }
   .portrait-line{
