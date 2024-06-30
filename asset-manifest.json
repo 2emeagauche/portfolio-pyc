@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.7f559ad0.css",
-    "main.js": "/static/js/main.99c8667c.js",
-    "static/media/nina-carducci.png": "/static/media/nina-carducci.69ff332d4b78a833ab84.png",
-    "static/media/724events.png": "/static/media/724events.cb4c07c7d716e4a96ef1.png",
-    "static/media/argentbank.png": "/static/media/argentbank.b4ad9385f77e7b92f697.png",
-    "static/media/kasa.png": "/static/media/kasa.590d9e193063d39135a2.png",
-    "static/media/portrait-start.png": "/static/media/portrait-start.53f53a59116075354f58.png",
-    "static/media/face.svg": "/static/media/face.92eb78a9104469176e2dc52fc3e6bb5d.svg",
-    "index.html": "/index.html",
-    "static/media/rocher-bleu.svg": "/static/media/rocher-bleu.96198de53aa35159845e9c3173ec0967.svg",
-    "static/media/chapter-divider.svg": "/static/media/chapter-divider.7589524d53ce9269bf8a98421dd3eed6.svg",
-    "static/media/rocher-rouge.svg": "/static/media/rocher-rouge.1aae310a0094394f6ddca5828b35ce92.svg",
-    "main.7f559ad0.css.map": "/static/css/main.7f559ad0.css.map",
-    "main.99c8667c.js.map": "/static/js/main.99c8667c.js.map"
+    "main.css": "/portfolio-pyc/static/css/main.7f559ad0.css",
+    "main.js": "/portfolio-pyc/static/js/main.b61c8576.js",
+    "static/media/nina-carducci.png": "/portfolio-pyc/static/media/nina-carducci.69ff332d4b78a833ab84.png",
+    "static/media/724events.png": "/portfolio-pyc/static/media/724events.cb4c07c7d716e4a96ef1.png",
+    "static/media/argentbank.png": "/portfolio-pyc/static/media/argentbank.b4ad9385f77e7b92f697.png",
+    "static/media/kasa.png": "/portfolio-pyc/static/media/kasa.590d9e193063d39135a2.png",
+    "static/media/portrait-start.png": "/portfolio-pyc/static/media/portrait-start.53f53a59116075354f58.png",
+    "static/media/face.svg": "/portfolio-pyc/static/media/face.92eb78a9104469176e2dc52fc3e6bb5d.svg",
+    "index.html": "/portfolio-pyc/index.html",
+    "static/media/rocher-bleu.svg": "/portfolio-pyc/static/media/rocher-bleu.96198de53aa35159845e9c3173ec0967.svg",
+    "static/media/chapter-divider.svg": "/portfolio-pyc/static/media/chapter-divider.7589524d53ce9269bf8a98421dd3eed6.svg",
+    "static/media/rocher-rouge.svg": "/portfolio-pyc/static/media/rocher-rouge.1aae310a0094394f6ddca5828b35ce92.svg",
+    "main.7f559ad0.css.map": "/portfolio-pyc/static/css/main.7f559ad0.css.map",
+    "main.b61c8576.js.map": "/portfolio-pyc/static/js/main.b61c8576.js.map"
   },
   "entrypoints": [
     "static/css/main.7f559ad0.css",
-    "static/js/main.99c8667c.js"
+    "static/js/main.b61c8576.js"
   ]
 }
