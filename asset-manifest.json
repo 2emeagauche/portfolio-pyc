@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-pyc/static/css/main.7f559ad0.css",
-    "main.js": "/portfolio-pyc/static/js/main.b61c8576.js",
+    "main.css": "/portfolio-pyc/static/css/main.6a8d6888.css",
+    "main.js": "/portfolio-pyc/static/js/main.ac3b71af.js",
     "static/media/nina-carducci.png": "/portfolio-pyc/static/media/nina-carducci.69ff332d4b78a833ab84.png",
     "static/media/724events.png": "/portfolio-pyc/static/media/724events.cb4c07c7d716e4a96ef1.png",
     "static/media/argentbank.png": "/portfolio-pyc/static/media/argentbank.b4ad9385f77e7b92f697.png",
@@ -12,11 +12,11 @@
     "static/media/rocher-bleu.svg": "/portfolio-pyc/static/media/rocher-bleu.96198de53aa35159845e9c3173ec0967.svg",
     "static/media/chapter-divider.svg": "/portfolio-pyc/static/media/chapter-divider.7589524d53ce9269bf8a98421dd3eed6.svg",
     "static/media/rocher-rouge.svg": "/portfolio-pyc/static/media/rocher-rouge.1aae310a0094394f6ddca5828b35ce92.svg",
-    "main.7f559ad0.css.map": "/portfolio-pyc/static/css/main.7f559ad0.css.map",
-    "main.b61c8576.js.map": "/portfolio-pyc/static/js/main.b61c8576.js.map"
+    "main.6a8d6888.css.map": "/portfolio-pyc/static/css/main.6a8d6888.css.map",
+    "main.ac3b71af.js.map": "/portfolio-pyc/static/js/main.ac3b71af.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f559ad0.css",
-    "static/js/main.b61c8576.js"
+    "static/css/main.6a8d6888.css",
+    "static/js/main.ac3b71af.js"
   ]
 }
