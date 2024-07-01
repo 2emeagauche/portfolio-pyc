@@ -91,7 +91,7 @@ header{
           bottom: auto;
           transition: width 0.3s ease 0s;
         }
-        &:hover::after{
+        &:hover::after, &.active-menu-item::after{
           width: 100%;
         }
       }

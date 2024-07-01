@@ -5,6 +5,7 @@ import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 
 import Banner from "../../components/Banner"
+import ChapterDivider from "../../components/ChapterDivider"
 import ChapterSection from '../../components/ChapterSection'
 import Projet from "../../components/Projet"
 import CardMotion from "../../components/CardMotion"
@@ -13,7 +14,6 @@ import assetArgentbank from '../../assets/argentbank.png'
 import assetKasa from '../../assets/kasa.png'
 import asset724Events from '../../assets/724events.png'
 import assetNinaCarducci from '../../assets/nina-carducci.png'
-import divider from '../../assets/chapter-divider.svg'
 import IconReact from '../../assets/Icons/IconReact'
 import IconRouter from '../../assets/Icons/IconRouter'
 import IconRedux from '../../assets/Icons/IconRedux'
@@ -79,7 +79,7 @@ const IconListItem = ({children, icon}) => {
 const Accueil = () => {
 
   return (
-    <div className="container">
+    <div className="container" id="top">
       <Banner />
       <section className='presentation-block' id='presentation'>
         <div className="main-title">
@@ -97,9 +97,7 @@ const Accueil = () => {
           <p>Entre 2023 et 2024, afin de <strong>valider et perfectionner</strong> mes acquis je suis la formation certifiante (BAC+2) <strong>Intégrateur Web d’OpenClassRooms</strong> d’une durée de 9 mois. Celle-ci est principalement axée sur REACT.</p>
         </div>
       </section>
-      <div className='chapter-divider'>
-        <img src={divider} alt="" aria-hidden='true' />
-      </div>
+      <ChapterDivider />
       <ChapterSection classValue='chapter' id='competences'>
         <h2 className='main-title'>Mes compétences</h2>
         <ThemeProvider theme={theme}>
@@ -143,13 +141,8 @@ const Accueil = () => {
           </CardMotion>
         </ThemeProvider>
       </ChapterSection>
-      <div className='chapter-divider'>
-        <img src={divider} alt="" aria-hidden='true' />
-      </div>
-      <ChapterSection
-        classValue='chapter'
-        id='realisations'
-      >
+      <ChapterDivider />
+      <ChapterSection classValue='chapter' id='realisations'>
         <h2 className='main-title'>Mes réalisations</h2>
         <h3 className="main-title" id='ocr'>Les projets de la formation OpenClassRooms</h3>
         <CardMotion>

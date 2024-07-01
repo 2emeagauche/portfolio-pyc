@@ -34,6 +34,8 @@ body {
   
 .container{
   margin-bottom: 2rem;
+  scroll-margin-top: 70px;
+
   @media (min-width: v.$mobile) {
     margin: 0 50px 6rem;
   }

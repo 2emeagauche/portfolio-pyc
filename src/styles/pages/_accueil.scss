@@ -3,7 +3,7 @@
 
 .presentation-block{
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   scroll-margin-top: 70px;
   @media (min-width: v.$tablet) {
     scroll-margin-top: 100px;
@@ -62,14 +62,10 @@
   }
 }
 .chapter-divider {
-  margin: 2rem auto;
   position: relative;
   z-index: 1;
   img{
     margin: auto;
     display: block;
   }
-}
-.chapter + .chapter-divider {
-  margin: auto;
 }

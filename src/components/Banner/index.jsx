@@ -5,7 +5,7 @@ import rocherBleu from '../../assets/rocher-bleu.svg'
 import rocherRouge from '../../assets/rocher-rouge.svg'
 import LineBanner from '../LineBanner'
 import { useEffect } from 'react'
-import { easeOut, easeInOut, useAnimate, useInView } from 'framer-motion'
+import { easeInOut, useAnimate, useInView } from 'framer-motion'
 
 const useBannerVisualAnimation = () => {
   const [scope, animate] = useAnimate()
