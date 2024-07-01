@@ -44,3 +44,14 @@ body {
     font-size: 1.25rem;
   }
 }
+
+.dialog-content{
+  padding: 1.5rem 1.4rem;
+  .main-title{
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+  }
+  .dialog-description{
+    line-height: 1.5rem;
+  }
+}

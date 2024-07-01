@@ -197,7 +197,7 @@ const Accueil = () => {
             projetTitle='Nina Carducci'
             projetResume='Optimisation SEO'
             projetGithubHref='https://github.com/2emeagauche/OCR_ArgentBank_ReactRedux_P11/tree/main/argent-bank'
-            projetDemoHref=''
+            projetDemoHref='https://2emeagauche.github.io/OCR_ninacarducci_P9.github.io/'
             projetVisuel={assetNinaCarducci}
           >
             <p>Optimisation SEO de la page d’un portfolio de photographe. Le score Lighthouse initiale est de 43. Il a été amélioré à 91 par</p>
