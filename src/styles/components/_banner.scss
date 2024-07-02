@@ -49,6 +49,9 @@
     .revealed{
       position: absolute;
       bottom: 0;
+      img{
+        opacity: 0;
+      }
     }
     .face{
       position: absolute;

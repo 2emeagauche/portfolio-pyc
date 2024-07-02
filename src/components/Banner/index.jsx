@@ -1,8 +1,8 @@
-import portrait from '../../assets/portrait-start.png'
+import portrait from '../../assets/portrait-start.webp'
 import mer from '../../assets/mer.png'
-import face from '../../assets/face.svg'
-import rocherBleu from '../../assets/rocher-bleu.svg'
-import rocherRouge from '../../assets/rocher-rouge.svg'
+import face from '../../assets/face.png'
+import rocherBleu from '../../assets/rocher-bleu.png'
+import rocherRouge from '../../assets/rocher-rouge.png'
 import LineBanner from '../LineBanner'
 import { useEffect } from 'react'
 import { easeInOut, useAnimate, useInView } from 'framer-motion'
@@ -21,6 +21,7 @@ const useBannerVisualAnimation = () => {
           },
           {
             duration:2,
+            delay:0.2,
             ease: easeInOut,
           }
         ],
@@ -31,7 +32,7 @@ const useBannerVisualAnimation = () => {
           },
           {
             duration:2,
-            at:"-2",
+            at:"-1",
             ease: easeInOut,
           }
         ],
@@ -43,18 +44,18 @@ const useBannerVisualAnimation = () => {
           },
           {
             duration:2,
-            at:"-1.95",
+            at:"-2",
             ease: easeInOut,
           }
         ],
         [
-          ".face",
+          ".revealed img",
           {
-            scale:isInView?[1.02, 1]:[1, 1.02]
+            opacity:isInView?[0, 1]:[1, 0]
           },
           {
-            duration:1.5,
-            at:"-1.7",
+            duration:0.3,
+            at:"-0.5",
             ease: easeInOut,
           }
         ],
@@ -65,7 +66,7 @@ const useBannerVisualAnimation = () => {
           },
           {
             duration:0.8,
-            at:"-1.2",
+            at:"-0.5",
             ease: easeInOut,
           }
         ]
@@ -101,7 +102,9 @@ const Banner = () => {
               >
               <img src={rocherRouge} alt="" />
             </div>
-            <img className='revealed' src={portrait} alt="" />
+            <div className='revealed'>
+              <img src={portrait} style={{opacity:0}} alt="" />
+            </div>
             <div
               className='face'
               initial={{

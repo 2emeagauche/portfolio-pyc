@@ -4,10 +4,10 @@ import ChapterSection from '../../components/ChapterSection'
 import Projet from "../../components/Projet"
 import CardMotion from "../../components/CardMotion"
 
-import assetArgentbank from '../../assets/argentbank.png'
-import assetKasa from '../../assets/kasa.png'
-import asset724Events from '../../assets/724events.png'
-import assetNinaCarducci from '../../assets/nina-carducci.png'
+import assetArgentbank from '../../assets/argentbank.jpg'
+import assetKasa from '../../assets/kasa.jpg'
+import asset724Events from '../../assets/724events.jpg'
+import assetNinaCarducci from '../../assets/nina-carducci.jpg'
 import IconReact from '../../assets/Icons/IconReact'
 import IconRouter from '../../assets/Icons/IconRouter'
 import IconRedux from '../../assets/Icons/IconRedux'
