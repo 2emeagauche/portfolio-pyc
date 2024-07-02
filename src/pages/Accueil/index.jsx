@@ -1,9 +1,3 @@
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import List from '@mui/material/List'
-import ListItem from '@mui/material/ListItem'
-import ListItemIcon from '@mui/material/ListItemIcon'
-import ListItemText from '@mui/material/ListItemText'
-
 import Banner from "../../components/Banner"
 import ChapterDivider from "../../components/ChapterDivider"
 import ChapterSection from '../../components/ChapterSection'
@@ -32,50 +26,6 @@ import IconPhotoshop from '../../assets/Icons/IconPhotoshop'
 import IconEmail from '../../assets/Icons/IconEmail'
 import IconJira from '../../assets/Icons/IconJira'
 
-const theme = createTheme({
-  components: {
-    MuiListItem:{
-      styleOverrides: {
-        root: {
-          padding: '0.4rem 0',
-        }
-      }
-    },
-    MuiListItemIcon: {
-      styleOverrides: {
-        root: {
-          minWidth: '3rem',
-        },
-      },
-    },
-    MuiListItemText: {
-      styleOverrides: {
-        root: {
-          margin: 'auto',
-        },
-      },
-    },
-    MuiTypography: {
-      styleOverrides: {
-        root: {
-          lineHeight: 'normal',
-        },
-      },
-    },
-  },
-});
-
-const IconListItem = ({children, icon}) => {
-  return (
-    <ListItem>
-      <ListItemIcon>
-        {icon}
-      </ListItemIcon>
-      <ListItemText>{children}</ListItemText>
-    </ListItem>
-  )
-}
-
 const Accueil = () => {
 
   return (
@@ -100,46 +50,44 @@ const Accueil = () => {
       <ChapterDivider />
       <ChapterSection classValue='chapter' id='competences'>
         <h2 className='main-title'>Mes compétences</h2>
-        <ThemeProvider theme={theme}>
           <CardMotion>
             <h3 className='main-title'>Nouvelles compétences</h3>
             <div className="card">
-              <List className="two-cols">
-                <IconListItem icon={<IconReact />}>REACT</IconListItem>
-                <IconListItem icon={<IconRouter />}>REACT Router</IconListItem>
-                <IconListItem icon={<IconRedux />}>REACT Redux</IconListItem>
-                <IconListItem icon={<IconJest />}>Tests unitaires et fonctionnels avec Jest</IconListItem>
-                <IconListItem icon={<IconApi />}>API Rest</IconListItem>
-              </List>
+              <ul className="two-cols">
+                <li><span className='icon-skill'><IconReact /></span><span className='text-skill'>REACT</span></li>
+                <li><span className='icon-skill'><IconRouter /></span><span className='text-skill'>REACT Router</span></li>
+                <li><span className='icon-skill'><IconRedux /></span><span className='text-skill'>REACT Redux</span></li>
+                <li><span className='icon-skill'><IconJest /></span><span className='text-skill'>Tests unitaires et fonctionnels avec Jest</span></li>
+                <li><span className='icon-skill'><IconApi /></span><span className='text-skill'>API Rest</span></li>
+              </ul>
             </div>
           </CardMotion>
           <CardMotion>
             <h3 className='main-title'>Perfectionnement</h3>
             <div className="card">
-              <List className="two-cols">
-                <IconListItem icon={<IconHtml5 />}>HTML 5 (Grid et Flex)</IconListItem>
-                <IconListItem icon={<IconCss3 />}>CSS 3 (SASS)</IconListItem>
-                <IconListItem icon={<IconJs />}>JS (modules, strict mode)</IconListItem>
-                <IconListItem icon={<IconAgile />}>Méthode Agile</IconListItem>
-                <IconListItem icon={<IconGit />}>GIT</IconListItem>
-                <IconListItem icon={<IconAlgo />}>Algorithmie</IconListItem>
-              </List>
+              <ul className="two-cols">
+                <li><span className='icon-skill'><IconHtml5 /></span><span className='text-skill'>HTML 5 (Grid et Flex)</span></li>
+                <li><span className='icon-skill'><IconCss3 /></span><span className='text-skill'>CSS 3 (SASS)</span></li>
+                <li><span className='icon-skill'><IconJs /></span><span className='text-skill'>JS (modules, strict mode)</span></li>
+                <li><span className='icon-skill'><IconAgile /></span><span className='text-skill'>Méthode Agile</span></li>
+                <li><span className='icon-skill'><IconGit /></span><span className='text-skill'>GIT</span></li>
+                <li><span className='icon-skill'><IconAlgo /></span><span className='text-skill'>Algorithmie</span></li>
+              </ul>
             </div>
           </CardMotion>
           <CardMotion>
             <h3 className='main-title'>Compétences annexes</h3>
             <div className="card">
-              <List className="two-cols">
-                <IconListItem icon={<IconPhotoshop />}>Adobe Photoshop</IconListItem>
-                <IconListItem icon={<IconAnimate />}>Adobe Animate</IconListItem>
-                <IconListItem icon={<IconIllustrator />}>Adobe Illustrator</IconListItem>
-                <IconListItem icon={<IconInkscape />}>Inkscape</IconListItem>
-                <IconListItem icon={<IconEmail />}>Montage d’emails responsive</IconListItem>
-                <IconListItem icon={<IconJira />}>Ticketing JIRA</IconListItem>
-              </List>
+              <ul className="two-cols">
+                <li><span className='icon-skill'><IconPhotoshop /></span><span className='text-skill'>Adobe Photoshop</span></li>
+                <li><span className='icon-skill'><IconAnimate /></span><span className='text-skill'>Adobe Animate</span></li>
+                <li><span className='icon-skill'><IconIllustrator /></span><span className='text-skill'>Adobe Illustrator</span></li>
+                <li><span className='icon-skill'><IconInkscape /></span><span className='text-skill'>Inkscape</span></li>
+                <li><span className='icon-skill'><IconEmail /></span><span className='text-skill'>Montage d’emails responsive</span></li>
+                <li><span className='icon-skill'><IconJira /></span><span className='text-skill'>Ticketing JIRA</span></li>
+              </ul>
             </div>
           </CardMotion>
-        </ThemeProvider>
       </ChapterSection>
       <ChapterDivider />
       <ChapterSection classValue='chapter' id='realisations'>

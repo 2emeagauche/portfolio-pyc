@@ -89,11 +89,28 @@
         margin: 0 2rem 3rem;
       }
       &>ul{
+        padding: 0.5rem 0;
         @media (min-width: v.$tablet) {
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-column-gap: 2rem;
           grid-row-gap: 0.5rem;
+        }
+        li{
+          padding: 0.4rem 0;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        .icon-skill{
+          display: inline-flex;
+          flex-shrink: 0;
+          min-width: 3rem;
+        }
+        .text-skill{
+          flex: 1 1 0;
+          min-width: 0;
+          margin: auto;
         }
       }
       &:last-child{
