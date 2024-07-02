@@ -84,13 +84,6 @@ const Banner = () => {
       <div className='portrait' ref={scope}>
         <LineBanner />
         <div className="portrait-image">
-          {/* <MotionConfig
-            transition={{
-              duration:1.5,
-              delay:1.8,
-              ease:easeOut
-            }}
-          > */}
             <img src={mer} alt="" />
             <div className='rocher-bleu'>
               <img src={rocherBleu} alt="" />
@@ -120,7 +113,6 @@ const Banner = () => {
               >
               <img src={face} alt="" />
             </div>
-          {/* </MotionConfig> */}
 
         </div>
       </div>
