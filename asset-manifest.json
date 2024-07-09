@@ -1,14 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-pyc/static/css/main.e4eb249d.css",
-    "main.js": "/portfolio-pyc/static/js/main.f2bed8b8.js",
-    "static/js/878.4fc8aeff.chunk.js": "/portfolio-pyc/static/js/878.4fc8aeff.chunk.js",
-    "static/js/787.5816c2a5.chunk.js": "/portfolio-pyc/static/js/787.5816c2a5.chunk.js",
-    "static/js/713.452f8106.chunk.js": "/portfolio-pyc/static/js/713.452f8106.chunk.js",
-    "static/js/358.32de8199.chunk.js": "/portfolio-pyc/static/js/358.32de8199.chunk.js",
-    "static/js/509.6010e83c.chunk.js": "/portfolio-pyc/static/js/509.6010e83c.chunk.js",
-    "static/js/834.f75807be.chunk.js": "/portfolio-pyc/static/js/834.f75807be.chunk.js",
-    "static/js/282.5d6bfb14.chunk.js": "/portfolio-pyc/static/js/282.5d6bfb14.chunk.js",
+    "main.css": "/portfolio-pyc/static/css/main.1c2c6564.css",
+    "main.js": "/portfolio-pyc/static/js/main.5cdf5faf.js",
     "static/media/nina-carducci.jpg": "/portfolio-pyc/static/media/nina-carducci.88d494511c470813eaea.jpg",
     "static/media/kasa.jpg": "/portfolio-pyc/static/media/kasa.6e36099086f58a322277.jpg",
     "static/media/argentbank.jpg": "/portfolio-pyc/static/media/argentbank.fc3dd54a60284887bf1e.jpg",
@@ -16,18 +9,11 @@
     "static/media/portrait-start.webp": "/portfolio-pyc/static/media/portrait-start.bbd45df60b477800c696.webp",
     "index.html": "/portfolio-pyc/index.html",
     "static/media/chapter-divider.svg": "/portfolio-pyc/static/media/chapter-divider.7589524d53ce9269bf8a98421dd3eed6.svg",
-    "main.e4eb249d.css.map": "/portfolio-pyc/static/css/main.e4eb249d.css.map",
-    "main.f2bed8b8.js.map": "/portfolio-pyc/static/js/main.f2bed8b8.js.map",
-    "878.4fc8aeff.chunk.js.map": "/portfolio-pyc/static/js/878.4fc8aeff.chunk.js.map",
-    "787.5816c2a5.chunk.js.map": "/portfolio-pyc/static/js/787.5816c2a5.chunk.js.map",
-    "713.452f8106.chunk.js.map": "/portfolio-pyc/static/js/713.452f8106.chunk.js.map",
-    "358.32de8199.chunk.js.map": "/portfolio-pyc/static/js/358.32de8199.chunk.js.map",
-    "509.6010e83c.chunk.js.map": "/portfolio-pyc/static/js/509.6010e83c.chunk.js.map",
-    "834.f75807be.chunk.js.map": "/portfolio-pyc/static/js/834.f75807be.chunk.js.map",
-    "282.5d6bfb14.chunk.js.map": "/portfolio-pyc/static/js/282.5d6bfb14.chunk.js.map"
+    "main.1c2c6564.css.map": "/portfolio-pyc/static/css/main.1c2c6564.css.map",
+    "main.5cdf5faf.js.map": "/portfolio-pyc/static/js/main.5cdf5faf.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4eb249d.css",
-    "static/js/main.f2bed8b8.js"
+    "static/css/main.1c2c6564.css",
+    "static/js/main.5cdf5faf.js"
   ]
 }
