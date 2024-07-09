@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-pyc/static/css/main.82456048.css",
+    "main.css": "/portfolio-pyc/static/css/main.e4eb249d.css",
     "main.js": "/portfolio-pyc/static/js/main.f2bed8b8.js",
     "static/js/878.4fc8aeff.chunk.js": "/portfolio-pyc/static/js/878.4fc8aeff.chunk.js",
     "static/js/787.5816c2a5.chunk.js": "/portfolio-pyc/static/js/787.5816c2a5.chunk.js",
@@ -16,7 +16,7 @@
     "static/media/portrait-start.webp": "/portfolio-pyc/static/media/portrait-start.bbd45df60b477800c696.webp",
     "index.html": "/portfolio-pyc/index.html",
     "static/media/chapter-divider.svg": "/portfolio-pyc/static/media/chapter-divider.7589524d53ce9269bf8a98421dd3eed6.svg",
-    "main.82456048.css.map": "/portfolio-pyc/static/css/main.82456048.css.map",
+    "main.e4eb249d.css.map": "/portfolio-pyc/static/css/main.e4eb249d.css.map",
     "main.f2bed8b8.js.map": "/portfolio-pyc/static/js/main.f2bed8b8.js.map",
     "878.4fc8aeff.chunk.js.map": "/portfolio-pyc/static/js/878.4fc8aeff.chunk.js.map",
     "787.5816c2a5.chunk.js.map": "/portfolio-pyc/static/js/787.5816c2a5.chunk.js.map",
@@ -27,7 +27,7 @@
     "282.5d6bfb14.chunk.js.map": "/portfolio-pyc/static/js/282.5d6bfb14.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82456048.css",
+    "static/css/main.e4eb249d.css",
     "static/js/main.f2bed8b8.js"
   ]
 }
