@@ -3,11 +3,6 @@
 
 .chapter {
   
-  scroll-margin-top: 70px;
-  @media (min-width: v.$tablet) {
-    scroll-margin-top: 100px;
-  }
-  
   &-block{
     margin: auto 1rem;
     padding: 0 0.8rem;
@@ -158,5 +153,18 @@
         margin-bottom: 0.5rem;
       }
     }
+  }
+}
+
+#realisations{
+  scroll-margin-top: 200px;
+  @media (min-width: v.$tablet) {
+    scroll-margin-top: 110px;
+  }
+}
+#competences{
+  scroll-margin-top: 120px;
+  @media (min-width: v.$tablet) {
+    scroll-margin-top: 110px;
   }
 }

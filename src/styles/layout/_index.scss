@@ -68,9 +68,9 @@ body {
     margin: auto;
   }
   path {
-    stroke-dashoffset: 285px;
+    stroke-dashoffset: 0px;
     stroke-dasharray: 285px;
-    animation: dash 3s linear infinite forwards;
+    animation: dash 3s 3s linear infinite forwards;
     stroke-width: 0.75;
   }
 }
