@@ -27,7 +27,7 @@ const Projet = (props) => {
           title={`En savoir plus sur ${projetTitle}`}
           onClick={handleClickOpen}
         >
-          <MoreHorizontalIcon sx={{color:'#1D3557'}} />
+          <MoreHorizontalIcon sx={{color:'#E63946'}} />
         </IconButton>
         <SimpleDialog
           open={open}
@@ -54,7 +54,7 @@ const Projet = (props) => {
             href={projetGithubHref}
             target='_blank'
             >
-            <GithubIcon sx={{color:'#1D3557'}} />
+            <GithubIcon sx={{color:'#E63946'}} />
           </IconButton>
           {projetDemoHref && <IconButton
             sx={{ color: 'rgba(0, 0, 0, 0.54)' }}
@@ -63,7 +63,7 @@ const Projet = (props) => {
             href={projetDemoHref}
             target='_blank'
           >
-            <LaunchIcon sx={{color:'#1D3557'}} />
+            <LaunchIcon sx={{color:'#E63946'}} />
           </IconButton>}
         </p>
       </div>

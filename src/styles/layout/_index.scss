@@ -2,7 +2,6 @@
 @use '../abstracts/mixins' as m;
 
 html {
-  scroll-behavior: smooth;
   height: 100%;
   background-color: v.$bg-color-1;
 }
@@ -57,32 +56,3 @@ body {
     line-height: 1.5rem;
   }
 }
-
-// .portrait-outline{
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr;
-//   svg{
-//     width: 200px;
-//     grid-column: 2;
-//     display: block;
-//     margin: auto;
-//   }
-//   path {
-//     stroke-dashoffset: 0px;
-//     stroke-dasharray: 285px;
-//     animation: dash 3s 3s linear infinite forwards;
-//     stroke-width: 0.75;
-//   }
-// }
-
-// @keyframes dash {
-//   0%{
-//     stroke-dashoffset: 285px;
-//   }
-//   50%{
-//     stroke-dashoffset: 0;
-//   }
-//   100%{
-//     stroke-dashoffset: -285px;
-//   }
-// }

@@ -1,12 +1,8 @@
 import MenuIcon from "../MenuIcon"
-import { resetMenuItem } from "../Utils"
+import { Link } from "react-scroll"
 
-const MainMenu = ({handleClose}) => {
+const MainMenu = ({handleClose, mobile}) => {
 
-  const handleMenuItemActiveStatus = (e) => {
-    resetMenuItem()
-    e.target.classList.add('active-menu-item')
-  }
 
   return (
     <>
@@ -17,15 +13,15 @@ const MainMenu = ({handleClose}) => {
       <></>
     }
     <div className="main-menu">
-      <ul onClick={handleClose?handleClose(false):null}>
+      <ul>
         <li>
-          <a className="menu-item" href='#presentation' onClick={(e) => handleMenuItemActiveStatus(e)}>Présentation</a>
+          <Link className="menu-item" activeClass="active-menu-item" spy={true} to="presentation" onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -70 : -100} isDynamic={true}>Présentation</Link>
         </li>
         <li>
-          <a className="menu-item" href='#competences' onClick={(e) => handleMenuItemActiveStatus(e)}>Mes Compétences</a>
+          <Link className="menu-item" activeClass="active-menu-item" spy={true} to='competences' onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -130 : -92} isDynamic={true}>Mes Compétences</Link>
         </li>
         <li>
-          <a className="menu-item" href='#realisations' onClick={(e) => handleMenuItemActiveStatus(e)}>Mes Réalisations</a>
+          <Link className="menu-item" activeClass="active-menu-item" spy={true} to='realisations' onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -210 : -152} isDynamic={true}>Mes Réalisations</Link>
         </li>
       </ul>
     </div>

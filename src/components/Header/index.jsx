@@ -6,14 +6,12 @@ import Drawer from '@mui/material/Drawer'
 import Button from '@mui/material/Button'
 import { useViewport } from "react-viewport-hooks"
 import { resetMenuItem } from "../Utils"
+import { Link } from "react-scroll"
 
 const Header = () => {
   const {vw} = useViewport()
 
-  let menuLayout = 'regular';
-  if (vw < 640) {
-    menuLayout = 'drawer';
-  }
+  let mobile = vw < 640
     
   const [open, setOpen] = useState(false);
   
@@ -24,19 +22,19 @@ const Header = () => {
   return (
     <AppBar position='sticky' color='inherit' elevation={0}>
       <div className="main-header">
-        <h1 className="main-title"><a href="#top" onClick={resetMenuItem}>Portfolio</a></h1>
+        <h1 className="main-title"><Link to="top" smooth={true} duration={500} offset={-70} onClick={resetMenuItem}>Portfolio</Link></h1>
         
         <nav>
           {
-            menuLayout === 'regular' ?
-              <MainMenu />
-              :
+            mobile ?
               <>
                 <Button sx={{all:'initial'}} onClick={toggleDrawer(true)}><MenuIcon /></Button>
                 <Drawer open={open} onClose={toggleDrawer(false)} anchor='right' container={() => document.querySelector('#root')} className="menu-drawer">
-                  <MainMenu handleClose={toggleDrawer} />
+                  <MainMenu handleClose={toggleDrawer} mobile={true} />
                 </Drawer>
               </>
+            :
+            <MainMenu />
           }
           
         </nav>
