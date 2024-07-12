@@ -1,8 +1,7 @@
 import MenuIcon from "../MenuIcon"
-import { Link } from "react-scroll"
+import { Button } from "react-scroll"
 
 const MainMenu = ({handleClose, mobile}) => {
-
 
   return (
     <>
@@ -15,13 +14,13 @@ const MainMenu = ({handleClose, mobile}) => {
     <div className="main-menu">
       <ul>
         <li>
-          <Link className="menu-item" activeClass="active-menu-item" spy={true} to="presentation" onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -70 : -100} isDynamic={true}>Présentation</Link>
+          <Button activeClass="active-menu-item" spy={true} to="presentation" onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -70 : -100} isDynamic={true}>Présentation</Button>
         </li>
         <li>
-          <Link className="menu-item" activeClass="active-menu-item" spy={true} to='competences' onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -130 : -92} isDynamic={true}>Mes Compétences</Link>
+          <Button activeClass="active-menu-item" spy={true} to='competences' onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -130 : -92} isDynamic={true}>Mes Compétences</Button>
         </li>
         <li>
-          <Link className="menu-item" activeClass="active-menu-item" spy={true} to='realisations' onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -210 : -152} isDynamic={true}>Mes Réalisations</Link>
+          <Button activeClass="active-menu-item" spy={true} to='realisations' onClick={handleClose?handleClose(false):null} smooth={true} duration={500} offset={mobile ? -210 : -152} isDynamic={true}>Mes Réalisations</Button>
         </li>
       </ul>
     </div>
