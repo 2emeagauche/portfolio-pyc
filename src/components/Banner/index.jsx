@@ -54,8 +54,8 @@ const useBannerVisualAnimation = () => {
             opacity:isInView?[0, 1]:[1, 0]
           },
           {
-            duration:0.3,
-            at:"-0.5",
+            duration:2,
+            at:"-2",
             ease: easeInOut,
           }
         ],
@@ -65,8 +65,8 @@ const useBannerVisualAnimation = () => {
             opacity:isInView?[1, 0]:[0, 1],
           },
           {
-            duration:0.8,
-            at:"-0.5",
+            duration:4,
+            at:"-3",
             ease: easeInOut,
           }
         ]
