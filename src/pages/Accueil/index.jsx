@@ -126,11 +126,12 @@ const Accueil = () => {
         <CardMotion>
           <Projet
             projetTitle='724 Events'
-            projetResume='Il s’agit de débugger un site en concevant et en utilisant les tests unitaires et fonctionnels avec JEST'
+            projetResume="Débugger le site d’une agence d’événementiels"
             projetGithubHref='https://github.com/2emeagauche/OCR_Debuggez-une-application-React.JS_P10'
             projetDemoHref=''
             projetVisuel={asset724Events}
             >
+            <p>Le site d’une agence d’événementiels comporte plusieurs bugs. Il s’agit d’établir un cahier de recette afin de résoudre tous les bugs. On conçoit des tests unitaires et fonctionnels avec JEST et on utilise les outils de développement des navigateurs Firefox et Chrome afin d’identifier et résoudre les bugs.</p>
           </Projet>
         </CardMotion>
         <CardMotion>
@@ -147,10 +148,10 @@ const Accueil = () => {
                 L’optimisation des images, du CSS et du Javascript
               </li>
               <li>
-                L’accessibilité
+                La mise en place des bonnes pratiques pour répondre à l’accessibilité. Notamment avec les attributs aria.
               </li>
               <li>
-                L’ajout de Rich Snippet
+                L’ajout de Rich Snippet pour améliorer le référencement par les moteurs de recherche.
               </li>
             </ul>
           </Projet>

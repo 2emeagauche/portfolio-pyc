@@ -18,7 +18,7 @@ const SimpleDialog = ({open, onClose, dTitle, children}) => {
           top: 8,
         }}
       >
-        <CloseIcon />
+        <CloseIcon sx={{color:'#E63946'}} />
       </IconButton>
       <div className="dialog-content">
         <h2 className="main-title" id='dialog-title'>{dTitle}</h2>
