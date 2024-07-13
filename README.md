@@ -20,18 +20,18 @@ Live url is  [https://2emeagauche.github.io/portfolio-pyc](https://2emeagauche.g
 
 ## Used Libraries and hooks
 
-`Material UI` to build the mobile menu and the dialog modals in the "Réalisations" section and also some icons.\
-`Framer Motion` to animate the banner visual and the animations on scroll.\
-`React scroll` to navigate to sections via the top menu.\
+- `Material UI` to build the mobile menu and the dialog modals in the "Réalisations" section and also some icons.
+- `Framer Motion` to animate the banner visual and the animations on scroll.
+- `React scroll` to navigate to sections via the top menu.
 
 ### Styles
 
-`Sass` to build the css.\
+`Sass` to build the css.
 
-Breakpoints are:\
-- mobile up to 460px wide.\
-- tablet from 460px to 640px wide and 640px to 960px.\
-- desktop above 960px wide.\
+Breakpoints are:
+- mobile up to 460px wide.
+- tablet from 460px to 640px wide and 640px to 960px.
+- desktop above 960px wide.
 
 #### Fonts
 
