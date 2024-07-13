@@ -14,12 +14,12 @@ You may also see any lint errors in the console.
 
 ### Deployment
 
-The page is deployed live with github pages
-Just `npm run deploy` to publish.
+The page is deployed live with github pages.\
+Just `npm run deploy` to publish.\
 Live url is  [https://2emeagauche.github.io/portfolio-pyc](https://2emeagauche.github.io/portfolio-pyc)
 
 ## Used Libraries and hooks
 
-`Material UI` to build the mobile menu and the dialog modals in the "Réalisations" section and also some icons.
-`Framer Motion` to animate the banner visual and the animations on scroll.
+`Material UI` to build the mobile menu and the dialog modals in the "Réalisations" section and also some icons.\
+`Framer Motion` to animate the banner visual and the animations on scroll.\
 `React scroll` to navigate to sections via the top menu.
