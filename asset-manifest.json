@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-pyc/static/css/main.6d992c15.css",
-    "main.js": "/portfolio-pyc/static/js/main.d923f89d.js",
+    "main.css": "/portfolio-pyc/static/css/main.54ea6ec3.css",
+    "main.js": "/portfolio-pyc/static/js/main.ad0c4b21.js",
     "static/media/nina-carducci.jpg": "/portfolio-pyc/static/media/nina-carducci.88d494511c470813eaea.jpg",
     "static/media/kasa.jpg": "/portfolio-pyc/static/media/kasa.6e36099086f58a322277.jpg",
     "static/media/argentbank.jpg": "/portfolio-pyc/static/media/argentbank.fc3dd54a60284887bf1e.jpg",
@@ -9,11 +9,11 @@
     "static/media/portrait-start.webp": "/portfolio-pyc/static/media/portrait-start.bbd45df60b477800c696.webp",
     "index.html": "/portfolio-pyc/index.html",
     "static/media/chapter-divider.svg": "/portfolio-pyc/static/media/chapter-divider.7589524d53ce9269bf8a98421dd3eed6.svg",
-    "main.6d992c15.css.map": "/portfolio-pyc/static/css/main.6d992c15.css.map",
-    "main.d923f89d.js.map": "/portfolio-pyc/static/js/main.d923f89d.js.map"
+    "main.54ea6ec3.css.map": "/portfolio-pyc/static/css/main.54ea6ec3.css.map",
+    "main.ad0c4b21.js.map": "/portfolio-pyc/static/js/main.ad0c4b21.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d992c15.css",
-    "static/js/main.d923f89d.js"
+    "static/css/main.54ea6ec3.css",
+    "static/js/main.ad0c4b21.js"
   ]
 }
