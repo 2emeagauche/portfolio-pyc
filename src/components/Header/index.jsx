@@ -6,7 +6,7 @@ import Drawer from '@mui/material/Drawer'
 import Button from '@mui/material/Button'
 import { useViewport } from "react-viewport-hooks"
 import { resetMenuItem } from "../Utils"
-import { Link } from "react-scroll"
+import { Button as RSButton } from "react-scroll"
 
 const Header = () => {
   const {vw} = useViewport()
@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <AppBar position='sticky' color='inherit' elevation={0}>
       <div className="main-header">
-        <h1 className="main-title"><Link to="top" smooth={true} duration={500} offset={-70} onClick={resetMenuItem}>Portfolio</Link></h1>
+        <h1 className="main-title"><RSButton to="top" smooth={true} duration={500} offset={-70} onClick={resetMenuItem}>Portfolio</RSButton></h1>
         
         <nav>
           {

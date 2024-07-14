@@ -60,6 +60,10 @@ header{
   @media (min-width: v.$mobile) {
     padding: 0 50px;
   }
+
+  button{
+    cursor:pointer;
+  }
   
   h1 {
     font-size: 2rem;
