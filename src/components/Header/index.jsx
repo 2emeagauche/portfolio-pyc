@@ -11,7 +11,7 @@ import { Button as RSButton } from "react-scroll"
 const Header = () => {
   const {vw} = useViewport()
 
-  let mobile = vw < 640
+  let mobile = vw < 680
     
   const [open, setOpen] = useState(false);
   

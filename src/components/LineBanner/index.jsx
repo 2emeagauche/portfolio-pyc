@@ -5,7 +5,7 @@ const LineBanner = () => {
   const {vw} = useViewport()
 
   let lineVariant = 'textonright';
-  if (vw < 640) {
+  if (vw < 680) {
     lineVariant = 'textonbottom';
   }
 
