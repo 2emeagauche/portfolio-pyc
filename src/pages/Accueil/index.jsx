@@ -3,8 +3,9 @@ import ChapterDivider from "../../components/ChapterDivider"
 import ChapterSection from '../../components/ChapterSection'
 import Projet from "../../components/Projet"
 import CardMotion from "../../components/CardMotion"
+import projets from "../../datas/projets.json"
 
-import assetArgentbank from '../../assets/argentbank.jpg'
+import assetArgentBank from '../../assets/argentbank.jpg'
 import assetKasa from '../../assets/kasa.jpg'
 import asset724Events from '../../assets/724events.jpg'
 import assetNinaCarducci from '../../assets/nina-carducci.jpg'
@@ -27,6 +28,13 @@ import IconEmail from '../../assets/Icons/IconEmail'
 import IconJira from '../../assets/Icons/IconJira'
 
 const Accueil = () => {
+
+  const projetMedias = {
+    "ArgentBank":assetArgentBank,
+    "Kasa":assetKasa,
+    "724Events":asset724Events,
+    "NinaCarducci":assetNinaCarducci
+}
 
   return (
     <div className="container" id="top">
@@ -93,69 +101,21 @@ const Accueil = () => {
       <ChapterSection classValue='chapter' id='realisations'>
         <h2 className='main-title'>Mes réalisations</h2>
         <h3 className="main-title" id='ocr'>Les projets de la formation OpenClassRooms</h3>
-        <CardMotion>
-          <Projet
-            projetTitle='ArgentBank'
-            projetResume='Projet REACT et REACT REDUX dans une stack MERN'
-            projetGithubHref='https://github.com/2emeagauche/OCR_ArgentBank_ReactRedux_P11/tree/main/argent-bank'
-            projetDemoHref=''
-            projetVisuel={assetArgentbank}
-            >
-            <p>Mise en œuvre de REACT et REACT REDUX.<br/>
-            Il s’agit d’une ébauche de site bancaire avec authentification conçu sur la stack MERN (MongoDB, Express, React, Nodejs).<br/>
-            Les pages statiques sont fournies ainsi que la base de données et l’API REST.<br/>
-            Le but et de faire une single page application en gérant les states de façon global avec REDUX et de requêter la BDD avec l’API REST.<br/>
-            De plus on doit proposer de nouveaux endpoints pour l’API REST pour gérer les comptes en banques en concevant une documentation SWAGGER.
-            </p>
-          </Projet>
-        </CardMotion>
-        <CardMotion>
-          <Projet
-            projetTitle='KASA'
-            projetResume='Projet en REACT et données json'
-            projetGithubHref='https://github.com/2emeagauche/OCR_KASA_P8'
-            projetDemoHref='https://2emeagauche.github.io/OCR_KASA_P8'
-            projetVisuel={assetKasa}
-            >
-            <p>Projet REACT.
-            Il s’agit d’un mini site de location de vacances comportant une page d’accueil une page « à propos », les pages de détails des logements ainsi qu’une page d’erreur.<br/>
-            On doit concevoir une single page application avec REACT et REACT Router, concevoir les styles CSS et le responsive d’après les maquettes Figma. Les données proviennent de l’exploitation d’un fichier JSON.
-            </p>
-          </Projet>
-        </CardMotion>
-        <CardMotion>
-          <Projet
-            projetTitle='724 Events'
-            projetResume="Débugger le site d’une agence d’événementiels"
-            projetGithubHref='https://github.com/2emeagauche/OCR_Debuggez-une-application-React.JS_P10'
-            projetDemoHref=''
-            projetVisuel={asset724Events}
-            >
-            <p>Le site d’une agence d’événementiels comporte plusieurs bugs. Il s’agit d’établir un cahier de recette afin de résoudre tous les bugs. On conçoit des tests unitaires et fonctionnels avec JEST et on utilise les outils de développement des navigateurs Firefox et Chrome afin d’identifier et résoudre les bugs.</p>
-          </Projet>
-        </CardMotion>
-        <CardMotion>
-          <Projet
-            projetTitle='Nina Carducci'
-            projetResume='Optimisation SEO'
-            projetGithubHref='https://github.com/2emeagauche/OCR_ArgentBank_ReactRedux_P11/tree/main/argent-bank'
-            projetDemoHref='https://2emeagauche.github.io/OCR_ninacarducci_P9.github.io/'
-            projetVisuel={assetNinaCarducci}
-          >
-            <p>Optimisation SEO de la page d’un portfolio de photographe. Le score Lighthouse initiale est de 43. Il a été amélioré à 91 par</p>
-            <ul>
-              <li>
-                L’optimisation des images, du CSS et du Javascript
-              </li>
-              <li>
-                La mise en place des bonnes pratiques pour répondre à l’accessibilité. Notamment avec les attributs aria.
-              </li>
-              <li>
-                L’ajout de Rich Snippet pour améliorer le référencement par les moteurs de recherche.
-              </li>
-            </ul>
-          </Projet>
-        </CardMotion>
+        {
+          projets.map((projet) => 
+            <CardMotion key={projet.id}>
+              <Projet
+                projetTitle={projet.title}
+                projetResume={projet.exerpt}
+                projetGithubHref={projet.gitHubRepo}
+                projetDemoHref={projet.projectUrl}
+                projetVisuel={projetMedias[projet.media]}
+              >
+                {projet.description}
+              </Projet>
+            </CardMotion>
+          )
+        }
       </ChapterSection>
     </div>
   )

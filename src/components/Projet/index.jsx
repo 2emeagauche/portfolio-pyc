@@ -34,7 +34,7 @@ const Projet = (props) => {
           onClose={handleClose}
           dTitle={projetTitle}
         >
-          {children}
+          <div dangerouslySetInnerHTML={{ __html: children }} />
         </SimpleDialog>
       </>
     )
