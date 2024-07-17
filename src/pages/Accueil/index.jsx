@@ -3,29 +3,14 @@ import ChapterDivider from "../../components/ChapterDivider"
 import ChapterSection from '../../components/ChapterSection'
 import Projet from "../../components/Projet"
 import CardMotion from "../../components/CardMotion"
+import DynamicComponentRenderer from "../../components/DynamicComponentRenderer"
 import projets from "../../datas/projets.json"
+import skillsFamily from "../../datas/skills.json"
 
 import assetArgentBank from '../../assets/argentbank.jpg'
 import assetKasa from '../../assets/kasa.jpg'
 import asset724Events from '../../assets/724events.jpg'
 import assetNinaCarducci from '../../assets/nina-carducci.jpg'
-import IconReact from '../../assets/Icons/IconReact'
-import IconRouter from '../../assets/Icons/IconRouter'
-import IconRedux from '../../assets/Icons/IconRedux'
-import IconJest from '../../assets/Icons/IconJest'
-import IconApi from '../../assets/Icons/IconApi'
-import IconAgile from '../../assets/Icons/IconAgile'
-import IconAlgo from '../../assets/Icons/IconAlgo'
-import IconCss3 from '../../assets/Icons/IconCss3'
-import IconGit from '../../assets/Icons/IconGit'
-import IconHtml5 from '../../assets/Icons/IconHtml5'
-import IconJs from '../../assets/Icons/IconJs'
-import IconAnimate from '../../assets/Icons/IconAnimate'
-import IconIllustrator from '../../assets/Icons/IconIllustrator'
-import IconInkscape from '../../assets/Icons/IconInkscape'
-import IconPhotoshop from '../../assets/Icons/IconPhotoshop'
-import IconEmail from '../../assets/Icons/IconEmail'
-import IconJira from '../../assets/Icons/IconJira'
 
 const Accueil = () => {
 
@@ -58,44 +43,22 @@ const Accueil = () => {
       <ChapterDivider />
       <ChapterSection classValue='chapter' id='competences'>
         <h2 className='main-title'>Mes compétences</h2>
-          <CardMotion>
-            <h3 className='main-title'>Nouvelles compétences</h3>
-            <div className="card">
-              <ul className="two-cols">
-                <li><span className='icon-skill'><IconReact /></span><span className='text-skill'>REACT</span></li>
-                <li><span className='icon-skill'><IconRouter /></span><span className='text-skill'>REACT Router</span></li>
-                <li><span className='icon-skill'><IconRedux /></span><span className='text-skill'>REACT Redux</span></li>
-                <li><span className='icon-skill'><IconJest /></span><span className='text-skill'>Tests unitaires et fonctionnels avec Jest</span></li>
-                <li><span className='icon-skill'><IconApi /></span><span className='text-skill'>API Rest</span></li>
-              </ul>
-            </div>
-          </CardMotion>
-          <CardMotion>
-            <h3 className='main-title'>Perfectionnement</h3>
-            <div className="card">
-              <ul className="two-cols">
-                <li><span className='icon-skill'><IconHtml5 /></span><span className='text-skill'>HTML 5 (Grid et Flex)</span></li>
-                <li><span className='icon-skill'><IconCss3 /></span><span className='text-skill'>CSS 3 (SASS)</span></li>
-                <li><span className='icon-skill'><IconJs /></span><span className='text-skill'>JS (modules, strict mode)</span></li>
-                <li><span className='icon-skill'><IconAgile /></span><span className='text-skill'>Méthode Agile</span></li>
-                <li><span className='icon-skill'><IconGit /></span><span className='text-skill'>GIT</span></li>
-                <li><span className='icon-skill'><IconAlgo /></span><span className='text-skill'>Algorithmie</span></li>
-              </ul>
-            </div>
-          </CardMotion>
-          <CardMotion>
-            <h3 className='main-title'>Compétences annexes</h3>
-            <div className="card">
-              <ul className="two-cols">
-                <li><span className='icon-skill'><IconPhotoshop /></span><span className='text-skill'>Adobe Photoshop</span></li>
-                <li><span className='icon-skill'><IconAnimate /></span><span className='text-skill'>Adobe Animate</span></li>
-                <li><span className='icon-skill'><IconIllustrator /></span><span className='text-skill'>Adobe Illustrator</span></li>
-                <li><span className='icon-skill'><IconInkscape /></span><span className='text-skill'>Inkscape</span></li>
-                <li><span className='icon-skill'><IconEmail /></span><span className='text-skill'>Montage d’emails responsive</span></li>
-                <li><span className='icon-skill'><IconJira /></span><span className='text-skill'>Ticketing JIRA</span></li>
-              </ul>
-            </div>
-          </CardMotion>
+          {
+            skillsFamily.map((skills) =>
+              <CardMotion key={skills.id}>
+                <h3 className='main-title'>{skills.title}</h3>
+                <div className="card">
+                  <ul className="two-cols">
+                    {
+                      skills.list.map((skill) =>
+                        <li key={skill.icon}><span className='icon-skill'><DynamicComponentRenderer componentName={`Icon${skill.icon}`} /></span><span className='text-skill'>{skill.text}</span></li>
+                      )
+                    }
+                  </ul>
+                </div>
+              </CardMotion>
+            )
+          }
       </ChapterSection>
       <ChapterDivider />
       <ChapterSection classValue='chapter' id='realisations'>

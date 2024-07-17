@@ -1,0 +1,88 @@
+[
+  {
+    "id":"new",
+    "title":"Nouvelles compétences",
+    "list":[
+      {
+        "icon":"React",
+        "text":"REACT"
+      },
+      {
+        "icon":"Router",
+        "text":"REACT Router"
+      },
+      {
+        "icon":"Redux",
+        "text":"REACT Redux"
+      },
+      {
+        "icon":"Jest",
+        "text":"Tests unitaires et fonctionnels avec Jest"
+      },
+      {
+        "icon":"Api",
+        "text":"API Rest"
+      }
+    ]
+  },
+  {
+    "id":"improve",
+    "title":"Perfectionnement",
+    "list":[
+      {
+        "icon":"Html5",
+        "text":"HTML 5 (Grid et Flex)"
+      },
+      {
+        "icon":"Css3",
+        "text":"CSS 3 (SASS)"
+      },
+      {
+        "icon":"Js",
+        "text":"JS (modules, strict mode)"
+      },
+      {
+        "icon":"Agile",
+        "text":"Méthode Agile"
+      },
+      {
+        "icon":"Git",
+        "text":"GIT"
+      },
+      {
+        "icon":"Algo",
+        "text":"Algorithmie"
+      }
+    ]
+  },
+  {
+    "id":"alternate",
+    "title":"Compétences annexes",
+    "list":[
+      {
+        "icon":"Photoshop",
+        "text":"Adobe Photoshop"
+      },
+      {
+        "icon":"Animate",
+        "text":"Adobe Animate"
+      },
+      {
+        "icon":"Illustrator",
+        "text":"Adobe Illustrator"
+      },
+      {
+        "icon":"Inkscape",
+        "text":"Inkscape"
+      },
+      {
+        "icon":"Email",
+        "text":"Montage d’emails responsive"
+      },
+      {
+        "icon":"Jira",
+        "text":"Ticketing JIRA"
+      }
+    ]
+  }
+]
