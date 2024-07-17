@@ -3,7 +3,6 @@ import ChapterDivider from "../../components/ChapterDivider"
 import ChapterSection from '../../components/ChapterSection'
 import Projet from "../../components/Projet"
 import CardMotion from "../../components/CardMotion"
-import DynamicComponentRenderer from "../../components/DynamicComponentRenderer"
 import projets from "../../datas/projets.json"
 import skillsFamily from "../../datas/skills.json"
 
@@ -12,6 +11,24 @@ import assetKasa from '../../assets/kasa.jpg'
 import asset724Events from '../../assets/724events.jpg'
 import assetNinaCarducci from '../../assets/nina-carducci.jpg'
 
+import iconReact from '../../assets/Icons/iconReact.png'
+import iconRouter from '../../assets/Icons/iconRouter.png'
+import iconRedux from '../../assets/Icons/iconRedux.png'
+import iconJest from '../../assets/Icons/iconJest.png'
+import iconApi from '../../assets/Icons/iconApi.png'
+import iconAgile from '../../assets/Icons/iconAgile.png'
+import iconAlgo from '../../assets/Icons/iconAlgo.png'
+import iconCss3 from '../../assets/Icons/iconCss3.png'
+import iconGit from '../../assets/Icons/iconGit.png'
+import iconHtml5 from '../../assets/Icons/iconHtml5.png'
+import iconJs from '../../assets/Icons/iconJs.png'
+import iconAnimate from '../../assets/Icons/iconAnimate.png'
+import iconIllustrator from '../../assets/Icons/iconIllustrator.png'
+import iconInkscape from '../../assets/Icons/iconInkscape.png'
+import iconPhotoshop from '../../assets/Icons/iconPhotoshop.png'
+import iconEmail from '../../assets/Icons/iconEmail.png'
+import iconJira from '../../assets/Icons/iconJira.png'
+
 const Accueil = () => {
 
   const projetMedias = {
@@ -19,7 +36,27 @@ const Accueil = () => {
     "Kasa":assetKasa,
     "724Events":asset724Events,
     "NinaCarducci":assetNinaCarducci
-}
+  }
+
+  const skillIcons = {
+    "iconReact": iconReact,
+    "iconRouter": iconRouter,
+    "iconRedux": iconRedux,
+    "iconJest": iconJest,
+    "iconApi": iconApi,
+    "iconAgile": iconAgile,
+    "iconAlgo": iconAlgo,
+    "iconCss3": iconCss3,
+    "iconGit": iconGit,
+    "iconHtml5": iconHtml5,
+    "iconJs": iconJs,
+    "iconAnimate": iconAnimate,
+    "iconIllustrator": iconIllustrator,
+    "iconInkscape": iconInkscape,
+    "iconPhotoshop": iconPhotoshop,
+    "iconEmail": iconEmail,
+    "iconJira": iconJira
+  }
 
   return (
     <div className="container" id="top">
@@ -51,7 +88,7 @@ const Accueil = () => {
                   <ul className="two-cols">
                     {
                       skills.list.map((skill) =>
-                        <li key={skill.icon}><span className='icon-skill'><DynamicComponentRenderer componentName={`Icon${skill.icon}`} /></span><span className='text-skill'>{skill.text}</span></li>
+                        <li key={skill.icon}><span className='icon-skill'><img src={skillIcons[`icon${skill.icon}`]} alt={skill.text} /></span><span className='text-skill'>{skill.text}</span></li>
                       )
                     }
                   </ul>
