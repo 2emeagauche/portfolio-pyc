@@ -18,6 +18,15 @@
     "description":"<p>Projet REACT. Il s’agit d’un mini site de location de vacances comportant une page d’accueil une page « à propos », les pages de détails des logements ainsi qu’une page d’erreur.<br \/>On doit concevoir une single page application avec REACT et REACT Router, concevoir les styles CSS et le responsive d’après les maquettes Figma. Les données proviennent de l’exploitation d’un fichier JSON.<\/p>"
   },
   {
+    "id":"5",
+    "title":"Sophie Bluel",
+    "exerpt":"Front : Vanilla JS<br \/>Back : Node/Express/SQLite",
+    "gitHubRepo":"https://github.com/2emeagauche/OCR_Portfolio-architecte-sophie-bluel_P6",
+    "projectUrl":"https://2emeagauche.github.io/OCR_Portfolio-architecte-sophie-bluel_P6/FrontEnd/index.html",
+    "media":"SophieBluel",
+    "description":"<p>On peut supprimer et ajouter des projets en se connectant (Login: sophie.bluel@test.tld - mdp: S0phie).<br \/>La BDD SQLite est hébergée sur railway.com.<\/p>"
+  },
+  {
     "id":"3",
     "title":"724 Events",
     "exerpt":"Débugger le site d’une agence d’événementiels",

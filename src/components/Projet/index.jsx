@@ -1,4 +1,5 @@
 import { useState } from "react"
+import parse from 'html-react-parser'
 import SimpleDialog from "../../components/SimpleDialog"
 import IconButton from '@mui/material/IconButton';
 import GithubIcon from '@mui/icons-material/GitHub';
@@ -44,7 +45,7 @@ const Projet = (props) => {
     <div className="card projet">
       <div className="projet-texts">
         <h4 className="main-title">{projetTitle}</h4>
-        <p>{projetResume}<MoreInfo /></p>
+        <p>{parse(projetResume)}<MoreInfo /></p>
         <p>
           
           <IconButton

@@ -10,6 +10,7 @@ import assetArgentBank from '../../assets/argentbank.jpg'
 import assetKasa from '../../assets/kasa.jpg'
 import asset724Events from '../../assets/724events.jpg'
 import assetNinaCarducci from '../../assets/nina-carducci.jpg'
+import assetSophieBluel from '../../assets/sophie-bluel.jpg'
 
 import iconReact from '../../assets/Icons/iconReact.png'
 import iconRouter from '../../assets/Icons/iconRouter.png'
@@ -35,7 +36,8 @@ const Accueil = () => {
     "ArgentBank":assetArgentBank,
     "Kasa":assetKasa,
     "724Events":asset724Events,
-    "NinaCarducci":assetNinaCarducci
+    "NinaCarducci":assetNinaCarducci,
+    "SophieBluel":assetSophieBluel
   }
 
   const skillIcons = {
